@@ -1,5 +1,6 @@
 import { useWorkoutContext } from "../hooks/useWorkoutContext";
 import trashcan from "../assets/trash_icon.png";
+
 function WorkoutDetails({ workout }) {
   const { dispatch } = useWorkoutContext();
 
