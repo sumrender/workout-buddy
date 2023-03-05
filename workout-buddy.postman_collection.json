@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "683c24fb-ebc9-4e1c-9015-6a05c5aac95d",
+		"name": "workout-buddy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "workouts",
+			"item": [
+				{
+					"name": "POST workout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"pullups\",\r\n    \"reps\": \"3\",\r\n    \"load\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}",
+							"host": [
+								"{{endpoint}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE workout",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/63b4d56a0e4c7c596cd716be",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"63b4d56a0e4c7c596cd716be"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET all workouts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{endpoint}}/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET one request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/63b4d56a0e4c7c596cd716be",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"63b4d56a0e4c7c596cd716be"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE workout",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"pushups\",\r\n    \"reps\": 5,\r\n    \"load\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/63b4d75757615037f43a3803",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"63b4d75757615037f43a3803"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sumrenders@gmail.com\",\r\n    \"password\": \"sumrender\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{l5000}}/api/user/login",
+							"host": [
+								"{{l5000}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sumrenders@gmail.com\",\r\n    \"password\": \"sumrender\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{l5000}}/api/user/signup",
+							"host": [
+								"{{l5000}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
